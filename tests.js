@@ -14,7 +14,7 @@ describe('helloWorld', function() {
     });
 });
 
-// Exercise 1
+// Exercise 1, 2 , 3, 4, 5
 describe('sayHello', function() {
     it('should be a defined function', function() {
         expect(typeof sayHello).toBe('function');
@@ -23,12 +23,9 @@ describe('sayHello', function() {
         expect(typeof sayHello()).toBe("string");
     });
     it('should return the string sayHello(name) when executed', function() {
-        expect(sayHello("Alex")).toBe("Hello Alex");
+        expect(sayHello("Alex")).toBe("Hello, Jane!");
     });
     it("should never return 'undefined' when called", function() {
         expect(sayHello()).not.toBe(undefined);
     });
 });
-
-// Exercise 2
-
